@@ -149,10 +149,11 @@ public class Menu {
         int idModificar =Integer.parseInt(sc.nextLine());
         Articulo articuloModificar = null;
         for (Articulo articulo : articulos) {
+            System.out.println("input id "+idModificar);
             if(articulo.getId() == idModificar){
                 articuloModificar = articulo;
+                break;
             };
-            break;
         }
 
         if (articuloModificar == null) {
